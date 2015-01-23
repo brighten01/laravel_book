@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - @localhost" uuid="880a01a0-9596-4883-9f90-18b6e903570a">
+    <database-info product="MySQL" version="5.6.21-log" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.34 ( Revision: jess.balint@oracle.com-20141014163213-wqbwpf1ok2kvo1om )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <schema name="" catalog="blog"/>
+    <table name="documents" schema="" catalog="blog" type="TABLE"/>
+    <table name="ip_baned" schema="" catalog="blog" type="TABLE"/>
+    <table name="post" schema="" catalog="blog" type="TABLE"/>
+    <table name="user" schema="" catalog="blog" type="TABLE"/>
+  </data-source>
+  <data-source name="MySQL - book@localhost" uuid="614c810c-6e73-4dfa-b7b9-53a1a73c0f70">
+    <database-info product="MySQL" version="5.6.21-log" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.34 ( Revision: jess.balint@oracle.com-20141014163213-wqbwpf1ok2kvo1om )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <schema name="" catalog="book"/>
+    <table name="book_author" schema="" catalog="book" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
+      <column name="book_id" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" remarks="5Zu+5Lmm57yW5Y+3"/>
+      <column name="author_name" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" remarks="5L2c6ICF5aeT5ZCN"/>
+      <column name="author_id" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" remarks="5L2c6ICFaWQ="/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+    <table name="book_authorinfo" schema="" catalog="book" type="TABLE">
+      <column name="author_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
+      <column name="pen_name" sqlType="VARCHAR" precision="11" scale="0" nullable="true" jdbcType="12" remarks="56yU5ZCN"/>
+      <column name="real_name" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12" remarks="55yf5ZCN"/>
+      <column name="birthday" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" remarks="5Ye655Sf5bm05pyI5pel"/>
+      <column name="native" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12" remarks="56WW57GN"/>
+      <column name="address" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12" remarks="5L2P5Z2AIA=="/>
+      <column name="hometown" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12" remarks="5a625Lmh"/>
+      <column name="description" sqlType="TEXT" precision="65535" scale="0" nullable="true" jdbcType="-1" remarks="5o+P6L+w"/>
+      <column name="create_time" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" remarks="5Yib5bu65pe26Ze0"/>
+      <column name="update_time" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" remarks="5pu05paw5pe26Ze0"/>
+      <column name="creator" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12" remarks="5Yib5bu65Lq6"/>
+      <primary-key name="PRIMARY" columns="author_id"/>
+    </table>
+    <table name="book_borrower" schema="" catalog="book" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
+      <column name="name" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12" remarks="5bm06b6E"/>
+      <column name="gender" sqlType="TINYINT" precision="3" scale="0" nullable="true" jdbcType="-6" remarks="5oCn5Yir"/>
+      <column name="card_number" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12" remarks="5Zu+5Lmm6K+B5Y+3"/>
+      <column name="nation" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12" remarks="5rCR5peP"/>
+      <column name="create_time" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" remarks="5Yib5bu65pe26Ze0"/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+    <table name="book_borrowinfo" schema="" catalog="book" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" remarks="6Ieq5aKe5peg5oSP5LmJ" autoIncrement="true"/>
+      <column name="book_id" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" remarks="5Lmm57GNaWQ="/>
+      <column name="borrow_id" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" remarks="5YCf5Lmm5Lq655qEaWQ="/>
+      <column name="isbn" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12" remarks="aXNibue8luWPtw=="/>
+      <column name="number" sqlType="TINYINT" precision="3" scale="0" nullable="true" jdbcType="-6" remarks="5YCf5Lmm55qE5pWw6YeP"/>
+      <column name="borrow_date" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" remarks="5YCf5Lmm55qE5pel5pyf"/>
+      <column name="back_date" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" remarks="5b2S6L+Y5pel5pyf"/>
+      <column name="expire_time" sqlType="TINYINT" precision="3" scale="0" nullable="true" jdbcType="-6" remarks="6L+H5pyf5aSp5pWw"/>
+      <column name="create_time" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="update_time" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="status" sqlType="TINYINT" precision="3" scale="0" nullable="true" jdbcType="-6" remarks="MSDlt7Lov5ggIDIg5pyq6L+Y"/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+    <table name="book_info" schema="" catalog="book" type="TABLE">
+      <column name="book_id" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="book_name" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12" remarks="5Lmm5ZCN"/>
+      <column name="author" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12" remarks="5L2c6ICF"/>
+      <column name="press" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12" remarks="5Ye654mI56S+"/>
+      <column name="type" sqlType="VARCHAR" precision="11" scale="0" nullable="true" jdbcType="12" remarks="5Zu+5Lmm57G75Yir"/>
+      <column name="source" sqlType="VARCHAR" precision="11" scale="0" nullable="true" jdbcType="12" remarks="5Ye65aSEIOiXj+WkhA=="/>
+      <column name="number" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" remarks="5Zu+5Lmm55qE5pWw6YeP"/>
+      <column name="status" sqlType="TINYINT" precision="3" scale="0" nullable="true" jdbcType="-6" remarks="5Zu+5Lmm54q25oCB"/>
+      <column name="create_time" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" remarks="5Yib5bu65pe26Ze0"/>
+      <column name="update_time" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" remarks="5pu05paw5pe26Ze0"/>
+      <column name="creator" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12" remarks="5Yib5bu65Lq6"/>
+      <column name="isbn" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12"/>
+    </table>
+    <table name="book_publishinfo" schema="" catalog="book" type="TABLE">
+      <column name="publish_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" remarks="5Ye654mI56S+aWQ=" autoIncrement="true"/>
+      <column name="name" sqlType="VARCHAR" precision="30" scale="0" nullable="true" jdbcType="12" remarks="5ZCN56ew"/>
+      <column name="description" sqlType="TEXT" precision="65535" scale="0" nullable="true" jdbcType="-1" remarks="5o+P6L+w"/>
+      <column name="history_time" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" remarks="5oiQ56uL5pe26Ze0"/>
+      <column name="typename" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12" remarks="57G75Yir"/>
+      <column name="estblished_time" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" remarks="5oiQ56uL5pe26Ze0"/>
+      <column name="foundation" sqlType="VARCHAR" precision="30" scale="0" nullable="true" jdbcType="12" remarks="5oiQ56uL5Y2V5L2N"/>
+      <column name="represent" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12"/>
+      <column name="awards" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12" remarks="6I635b6X6I2j6KqJ"/>
+      <column name="inscribe" sqlType="VARCHAR" precision="30" scale="0" nullable="true" jdbcType="12" remarks="6aKY5a2X"/>
+      <column name="address" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12" remarks="5Zyw5Z2A"/>
+      <column name="concat" sqlType="VARCHAR" precision="100" scale="0" nullable="true" jdbcType="12" remarks="6IGU57O75pa55byP"/>
+      <column name="create_time" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" remarks="5L+h5oGv5Yib5bu65pe26Ze0"/>
+      <column name="update_time" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" remarks="5L+h5oGv5pu05paw5pe26Ze0"/>
+      <column name="creator" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12" remarks="5pu05paw6ICF"/>
+      <column name="editor" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12" remarks="57yW6L6R6ICF"/>
+      <primary-key name="PRIMARY" columns="publish_id"/>
+    </table>
+    <table name="book_publlish" schema="" catalog="book" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
+      <column name="publish_id" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" remarks="5Ye654mI56S+aWQ="/>
+      <column name="book_id" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" remarks="5Zu+5Lmm57yW5Y+3"/>
+      <column name="publish_name" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12" remarks="5Ye654mI56S+5ZCN56ew"/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+    <table name="book_user" schema="" catalog="book" type="TABLE">
+      <column name="uid" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" remarks="IOeUqOaIt2lk" autoIncrement="true"/>
+      <column name="username" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12" remarks="55So5oi35ZCN"/>
+      <column name="real_name" sqlType="VARCHAR" precision="10" scale="0" nullable="false" jdbcType="12" remarks="55yf5a6e5aeT5ZCNIA=="/>
+      <column name="create_time" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" remarks="5Yib5bu65pe26Ze0"/>
+      <column name="update_time" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" remarks="5pu05paw5pe26Ze0"/>
+      <column name="adminid" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" remarks="566h55CG5ZGYaWQ="/>
+      <column name="group_id" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" remarks="55So5oi357uEaWQ="/>
+      <column name="card_number" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12" remarks="5YCf6ZiF5Y2h57yW5Y+3"/>
+      <column name="card_password" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12" remarks="5YCf6ZiF5Y2h5a+G56CB"/>
+      <column name="password" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12" remarks="55So5oi355m75b2V5a+G56CBIOWvueW6lOeUqOaIt+WQjQ=="/>
+      <column name="mobile" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" remarks="55S16K+d"/>
+      <column name="address" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12" remarks="5Zyw5Z2A"/>
+      <column name="qq" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" remarks="cXHlj7c="/>
+      <primary-key name="PRIMARY" columns="uid"/>
+    </table>
+  </data-source>
+</component>
