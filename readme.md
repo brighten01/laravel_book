@@ -23,3 +23,6 @@ Documentation for the entire framework can be found on the [Laravel website](htt
 ### License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+
+
+lavarel 写了一个图书借阅管理系统 只是一个初步目的是用来 使用灵活的数据模型 后续会继续增加功能
