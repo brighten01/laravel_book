@@ -9,7 +9,7 @@ class UserController extends  BaseController{
         return View::make("user.login");
     }
 
-    public function check(){
+    public function check() {
 
     }
 
@@ -29,9 +29,7 @@ class UserController extends  BaseController{
         return View::make("user.card_login");
     }
 
-
     public function card_logout(){
-
 
     }
 }

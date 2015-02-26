@@ -23,6 +23,5 @@ class HomeController extends BaseController {
     public function test(){
         $url = action('HomeController@test');
         echo $action = Route::currentRouteAction();
-
     }
 }
